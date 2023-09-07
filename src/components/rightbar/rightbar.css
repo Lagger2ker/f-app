@@ -1,3 +1,12 @@
 .rightbar {
     flex: 4;
 }
+
+.rightbarWrapper {
+    padding: 20px 20px 0 0;
+}
+
+.birthdayIcon {
+    font-size: 20px;
+    color :red;
+}
