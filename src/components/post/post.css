@@ -1,6 +1,6 @@
 .post {
   width: 100%;
-  border: 10px;
+  border-radius: 10px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin: 30px 0;
@@ -8,7 +8,7 @@
 }
 
 .postWrapper {
-  padding: 15px;
+  padding: 10px;
   border-radius: 50px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .postDate {
-  font-size: small;
+  font-size: 12px;
 }
 
 .postCenter {
@@ -67,10 +67,12 @@
   font-size: 30px;
   color: blue;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .heartIcon {
   color: red;
+  cursor: pointer;
 }
 
 .postLikeCounter {
@@ -80,4 +82,5 @@
 .postCommentText {
   cursor: pointer;
   border-bottom: 1px solid gray;
+  font-size: 15px;
 }
