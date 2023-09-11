@@ -12,12 +12,26 @@ export default function Profile() {
         <Sidebar />
         <div className="profileRight">
           <div className="profileRightTop">
-            <img src="asset/post/404.jpeg" alt="" className="profileCoverImg" />
-            <img src="asset/person/3.jpeg" alt="" className="profileUserImg" />
+            <div className="profileCover">
+              <img
+                src="asset/post/404.jpeg"
+                alt=""
+                className="profileCoverImg"
+              />
+              <img
+                src="asset/person/3.jpeg"
+                alt=""
+                className="profileUserImg"
+              />
+            </div>
+            <div className="profileInfo">
+                <h4 className="profileInfoName" >Lagger</h4>
+                <span className="profileInfoDesc">Owl-Lag</span>
+            </div>
           </div>
           <div className="profileRightBottom">
             <Feed />
-            <Rightbar />
+            <Rightbar profile />
           </div>
         </div>
       </div>
