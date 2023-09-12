@@ -3,7 +3,7 @@ import { Cake } from "@mui/icons-material";
 import Online from "../online/online";
 import { Users } from "../../dummyData";
 
-export default function Rightbar({profile}) {
+export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
     return (
       <>
@@ -25,13 +25,82 @@ export default function Rightbar({profile}) {
   };
 
   const ProfileRightbar = () => {
-    return <h1>That is profile</h1>;
+    return (
+      <>
+        <h4 className="rightbarTitle">User infomation</h4>
+        <div className="rightbarInfo">
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">City:</span>
+            <span className="rightbarInfoValue">Viet Nam</span>
+          </div>
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">From:</span>
+            <span className="rightbarInfoValue">Han Noi</span>
+          </div>
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">Realatioship:</span>
+            <span className="rightbarInfoValue">Single</span>
+          </div>
+        </div>
+        <h4 className="rightbarTitle">User friends</h4>
+        <div className="rightbarFollowings">
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/5.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/7.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/3.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/4.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/6.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="asset/person/8.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">2Unknow</span>
+          </div>
+        </div>
+      </>
+    );
   };
   return (
-      <div className="rightbar">
-        <div className="rightbarWrapper">
-          <HomeRightbar />
-        </div>
+    <div className="rightbar">
+      <div className="rightbarWrapper">
+        <ProfileRightbar />
       </div>
+    </div>
   );
 }
